@@ -315,12 +315,8 @@ public:
         pchMessageStart[3] = 0xd1;
         nDefaultPort = 29947;
         nPruneAfterHeight = 1000;
-        startNewChain = false;
 
         genesis = CreateGenesisBlock(1530311244, 3, 0x207fffff, 1, 50 * COIN);
-
-        if (startNewChain)
-            MineGenesis(genesis, consensus.powLimit, true);
 
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x4075df8d278b937b316ad54f385d0228b88a8e6c5f62478ba0a1313fac08147b"));
