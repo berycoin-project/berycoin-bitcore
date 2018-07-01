@@ -24,18 +24,18 @@ In case you want to build the disk image with `make deploy` (.dmg / optional), y
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Build Qtum Core
+Build Build Berycoin Core
 ------------------------
 
-1. Clone the qtum source code and cd into `qtum`
+1. Clone the berycoin source code and cd into `berycoin`
 
-        git clone --recursive https://github.com/qtumproject/qtum.git
-        cd qtum
+        git clone --recursive https://github.com/berycoin-project/berycoin.git
+        cd berycoin
         git submodule update --init --recursive
 
-2.  Build qtum-core:
+2.  Build berycoin-core:
 
-    Configure and build the headless qtum binaries as well as the GUI (if Qt is found).
+    Configure and build the headless berycoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 

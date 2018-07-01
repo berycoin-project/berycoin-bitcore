@@ -32,7 +32,7 @@ class HelpMessageDialog;
 class ModalOverlay;
 class TitleBar;
 class NavigationBar;
-class QtumVersionChecker;
+class BerycoinVersionChecker;
 
 class CWallet;
 
@@ -138,7 +138,7 @@ private:
     RPCConsole *rpcConsole;
     HelpMessageDialog *helpMessageDialog;
     ModalOverlay *modalOverlay;
-    QtumVersionChecker *qtumVersionChecker;
+    BerycoinVersionChecker *berycoinVersionChecker;
     ModalOverlay *modalBackupOverlay;
 
     /** Keep track of previous number of blocks, to detect progress */
