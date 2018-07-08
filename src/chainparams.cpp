@@ -86,8 +86,8 @@ public:
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 8 * 60; // 16 minutes
-        consensus.nPowTargetSpacing = 2 * 64;
+        consensus.nPowTargetTimespan = 2 * 60; // 16 minutes
+        consensus.nPowTargetSpacing = 1 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = true;
         consensus.fPoSNoRetargeting = false;
@@ -152,12 +152,11 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             ( 0, uint256S("0x000037b243b6670ed181f57cb453cfb09b92c7a2f2257b5088a60e5da358511e"))
-            ( 32, uint256S("0x0000de0614af800c263c4dfda777ba1f35b6c3f948a115281c6ab48e1b36e892"))
-            ( 47, uint256S("0x0000db1ec19f4e42d4dcbb382390adc47ebb4dc3abd1e63880a6491cfd4516d6"))
-            ( 100, uint256S("0x000024202605dfe495ec76e91ae8b67cf937d860c1273b24bbdb3d11e6d50344"))
-            ( 1000, uint256S("0x0000d1147451d330f09f49c881fd520399e5fb8cba970d4bbcc35c03d2ea5b11"))
-            ( 2000, uint256S("0x00001ef5870652155ef68e6d424ef39a2c35729b2fb08c84cd722c7289088634"))
-            ( 2301, uint256S("0xef8bd1242792f41ced846b255849d445ffba50f44de6ccb146d21ff8965af82a"))
+            ( 32, uint256S("0x"))
+            ( 47, uint256S("0x"))
+            ( 100, uint256S("0x"))
+            ( 1000, uint256S("0x"))
+            ( 2000, uint256S("0x"))
         };
 
         chainTxData = ChainTxData{
@@ -190,8 +189,8 @@ public:
         consensus.BIP66Height = 0; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 8 * 60; // 16 minutes
-        consensus.nPowTargetSpacing = 2 * 64;
+        consensus.nPowTargetTimespan = 2 * 60; // 16 minutes
+        consensus.nPowTargetSpacing = 1 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = true;
         consensus.fPoSNoRetargeting = false;
@@ -286,8 +285,8 @@ public:
         consensus.BIP66Height = 0; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 8 * 60; // 16 minutes
-        consensus.nPowTargetSpacing = 2 * 64;
+        consensus.nPowTargetTimespan = 2 * 60; // 16 minutes
+        consensus.nPowTargetSpacing = 1 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.fPoSNoRetargeting = true;
