@@ -108,7 +108,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x"); // berycoin
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000007d107d1"); // berycoin
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x000037b243b6670ed181f57cb453cfb09b92c7a2f2257b5088a60e5da358511e"); //453354
