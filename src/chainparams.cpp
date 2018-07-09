@@ -108,7 +108,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000007d107d1"); // berycoin
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000"); // berycoin
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x000037b243b6670ed181f57cb453cfb09b92c7a2f2257b5088a60e5da358511e"); //453354
@@ -152,11 +152,11 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             ( 0, uint256S("0x000037b243b6670ed181f57cb453cfb09b92c7a2f2257b5088a60e5da358511e"))
-            ( 32, uint256S("0x00008dc1f340c696f3907f0598723a19f441fe3d92114e44700a42445274dd37"))
-            ( 47, uint256S("0x0000cb761f02dd4d41a9cbe4146d1cabb223507fdcee561113670bbb3d2f9d99"))
-            ( 100, uint256S("0x00008add374e6c5c2bd80701561b6c981467d9e051cdc429cc4f84ac2d95bfdf"))
-            ( 1000, uint256S("0x0000b00e7cd6384a2adf81dfeb92e1f6d1760cc7c3c897a318035f2845130bc3"))
-            ( 2000, uint256S("0x0000b01b567b2fc562230b12783f051160483074057904abbf8ed5d47f375b1a"))
+            ( 32, uint256S("0x"))
+            ( 47, uint256S("0x"))
+            ( 100, uint256S("0x"))
+            ( 1000, uint256S("0x"))
+            ( 2000, uint256S("0x"))
         };
 
         chainTxData = ChainTxData{
