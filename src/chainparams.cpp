@@ -79,7 +79,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 52596000; // berycoin halving every 4 years
+        consensus.nSubsidyHalvingInterval = 52593999; // berycoin halving 
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x000037b243b6670ed181f57cb453cfb09b92c7a2f2257b5088a60e5da358511e");
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
@@ -182,7 +182,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 52596000; // berycoin halving every 4 years
+        consensus.nSubsidyHalvingInterval = 52593999; // berycoin halving
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x00003d6bc96562488973f8e67db5edc2f8769fb7d006c67707892c3ddca8731c");
         consensus.BIP65Height = 0; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
@@ -278,7 +278,7 @@ class CRegTestParams : public CChainParams {
 public:
     CRegTestParams() {
         strNetworkID = "regtest";
-        consensus.nSubsidyHalvingInterval = 52596000;
+        consensus.nSubsidyHalvingInterval = 52593999;
         consensus.BIP34Height = 0; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests) // activate for berycoin
         consensus.BIP34Hash = uint256S("0x4075df8d278b937b316ad54f385d0228b88a8e6c5f62478ba0a1313fac08147b");
         consensus.BIP65Height = 0; // BIP65 activated on regtest (Used in rpc activation tests)
